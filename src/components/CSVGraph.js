@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import {
-    LineChart, Line, XAxis, YAxis, Bar,
+    ComposedChart, Line, XAxis, YAxis, Bar,
     CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
@@ -26,13 +26,15 @@ const CSVGraph = () => {
         <div style={{ width: '100%', maxWidth: 700, margin: '0 auto' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>2024 Particuate Matter in Tacloban</h2>
             <ResponsiveContainer width="100%" height={600} data={data}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="Month" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="PM10" barSize={40} fill="#2b8f2d" />
-                <Line type="monotone" dataKey="PM10 24h Limit" stroke="#8884d8" />
+                <ComposedChart data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="Month" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="PM10" barSize={40} fill="#2b8f2d" />
+                    <Line type="monotone" dataKey="PM10 24h Limit" stroke="#8884d8" />
+                </ComposedChart>
             </ResponsiveContainer>
         </div>
     );
