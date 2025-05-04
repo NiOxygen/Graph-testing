@@ -1,11 +1,11 @@
 import React from 'react';
-import GraphComponent from './components/GraphComponent'; // 👈 Import it here
+import GraphComponent from './components/CSVGraph'; // 👈 Import it here
 
 function App() {
   return (
       <div className="App">
         <h1>Graph Hosting App</h1>
-        <GraphComponent />  {/* 👈 Use the component here */}
+        <CSVGraph />  {/* 👈 Use the component here */}
       </div>
   );
 }
