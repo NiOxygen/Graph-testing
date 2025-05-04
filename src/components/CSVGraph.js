@@ -25,13 +25,14 @@ const CSVGraph = () => {
     return (
         <div>
             <h2>Graph from CSV</h2>
-            <LineChart width={600} height={300} data={data}>
+            <LineChart width={1200} height={600} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
+                <XAxis dataKey="Month" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                <Line type="monotone" dataKey="PM10" stroke="#8884d8" />
+                <Line type="monotone" dataKey="PM2.5" stroke="#2b8f2d" />
             </LineChart>
         </div>
     );

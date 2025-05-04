@@ -1,5 +1,5 @@
 import React from 'react';
-import GraphComponent from './components/CSVGraph'; // 👈 Import it here
+import CSVGraph from './components/CSVGraph'; // 👈 Import it here
 
 function App() {
   return (
