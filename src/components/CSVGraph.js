@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import {
-    LineChart, Line, XAxis, YAxis,
-    CartesianGrid, Tooltip, Legend
+    LineChart, Line, XAxis, YAxis, Bar,
+    CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
 const CSVGraph = () => {
