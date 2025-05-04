@@ -23,17 +23,17 @@ const CSVGraph = () => {
     }, []);
 
     return (
-        <div>
-            <h2>Graph from CSV</h2>
-            <LineChart width={1200} height={600} data={data}>
+        <div style={{ width: '100%', maxWidth: 700, margin: '0 auto' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>2024 Particuate Matter in Tacloban</h2>
+            <ResponsiveContainer width="100%" height={600} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="Month" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="PM10" stroke="#8884d8" />
-                <Line type="monotone" dataKey="PM2.5" stroke="#2b8f2d" />
-            </LineChart>
+                <Bar dataKey="PM10" barSize={40} fill="#2b8f2d" />
+                <Line type="monotone" dataKey="PM10 24h Limit" stroke="#8884d8" />
+            </ResponsiveContainer>
         </div>
     );
 };
