@@ -35,7 +35,7 @@ const Station_Map = () => {
                         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
                         url="https://{s}.tile.oppenstreetma.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={[11.2068671,125.0081619]} icon={customIcon}>
+                    <Marker position={[11.20686,125.00816]} icon={customIcon}>
                         <Popup>
                             Tacloban City Station 1. <br /> CAAQMS, Sensor-727, Sensor-729.<br />11.2068671,125.0081619
                         </Popup>
