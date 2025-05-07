@@ -1,14 +1,13 @@
 import React from 'react';
-import CSVGraph from './components/CSVGraph'; // 👈 Import it here
-import React from 'react';
-import SimpleMap from './SimpleMap';
+import CSVGraph from './components/CSVGraph';
+import Station_Map from './components/Station_Map';
 
 function App() {
   return (
       <div className="App">
         <h1>Tacloban City Air Quality</h1>
         <CSVGraph />
-          <Station_Maps />
+          <Station_Map />
       </div>
   );
 }
