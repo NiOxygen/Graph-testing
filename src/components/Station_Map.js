@@ -12,7 +12,7 @@ const customIcon = new L.Icon({
 
 
 const Station_Map = () => {
-    const position = [11.17840,124.97892];
+    const position = [11.20686,125.00816];
 
     return (
 
